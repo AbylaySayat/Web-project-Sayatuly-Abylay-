@@ -11,14 +11,14 @@ function App() {
   const [recipes, setRecipes] = useState([]);
   
   // search for the recipe
-  const searchRecipes = async () => {
+  async function searchRecipes() {
     setIsLoading(true);
-    const url = searchApi + query
+    const url = searchApi + query;
     const res = await fetch(url);
     const data = await res.json();
     setRecipes(data.meals);
     setIsLoading(false);
-  };
+  }
 
   useEffect(() => {
     searchRecipes()

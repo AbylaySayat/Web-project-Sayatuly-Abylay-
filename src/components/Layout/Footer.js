@@ -41,7 +41,7 @@ const Footer = ({ socialLinks, copyrightText }) => {
             },
           }}
         >
-          {copyrightText || "All Rights Reserved © Techinfo YT"}
+          {copyrightText || "All Rights Reserved © Qazaq Food"}
         </Typography>
       </Box>
     </>
